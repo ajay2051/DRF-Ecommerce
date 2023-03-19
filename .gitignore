@@ -3,3 +3,5 @@ __pycache__
 .idea
 .env
 db.sqlite3
+.ini
+.pytest_cache

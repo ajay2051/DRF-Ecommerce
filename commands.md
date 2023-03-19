@@ -12,3 +12,5 @@ Django
 djangorestframework
 psycopg2-binary
 python-dotenv
+pytest
+pytest-django
