@@ -16,3 +16,4 @@ pytest
 pytest-django
 black
 django-mptt
+drf-spectacular
