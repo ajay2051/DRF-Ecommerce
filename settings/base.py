@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -37,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # External Packages
-    'rest_framework'
+    'rest_framework',
+
+    # Installed Apps
+    'product.apps.ProductConfig',
 ]
 
 MIDDLEWARE = [

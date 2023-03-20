@@ -14,3 +14,5 @@ psycopg2-binary
 python-dotenv
 pytest
 pytest-django
+black
+django-mptt
