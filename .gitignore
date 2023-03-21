@@ -7,3 +7,5 @@ pytest.ini
 .pytest_cache
 migrations
 schemas.yml
+.coverage
+htmlcov

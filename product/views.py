@@ -15,3 +15,23 @@ class CategoryView(viewsets.ViewSet):
     def list(self, request):
         serializer = CategorySerializer(self.queryset, many=True)
         return Response(serializer.data)
+
+
+class BrandView(viewsets.ViewSet):
+    """A simple viewlet for viewing all brands"""
+    queryset = BrandSerializer.Meta.model.objects.all()
+
+    @extend_schema(responses=BrandSerializer)
+    def list(self, request):
+        serializer = BrandSerializer(self.queryset, many=True)
+        return Response(serializer.data)
+
+
+class ProductView(viewsets.ViewSet):
+    """A simple viewlet for viewing all brands"""
+    queryset = ProductSerializer.Meta.model.objects.all()
+
+    @extend_schema(responses=ProductSerializer)
+    def list(self, request):
+        serializer = ProductSerializer(self.queryset, many=True)
+        return Response(serializer.data)
